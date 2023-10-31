@@ -1,0 +1,66 @@
+Initial Configuration
+==============================
+git --version
+git init [ initilze init ]
+git config -l [ check current users details if any ]
+git config --global user.email "youremailid@gmail.com" [set email]
+git config --global user.name "yourusername" [set username]
+git config --global init.defaultBranch main [default is master so change it main]
+
+
+git remote add origin <Remote_Repo_Name> [ssh<key> to http]
+git remote remove origin [If want to remove entry]
+
+else
+git clone -b <Branch_name> <Repo_URL> [Clone a public repo to your local system]
+git branch <branch_name> [Create new branch]
+git checkout <branch_name> [switch to branch]
+git checkout -b <branch_name>  [create and switch to new branch]
+git push -u origin <branch_name> [push local branch to remote repo]
+or
+git pull origin <branch_name> [If you want to merge remote change to current branch]
+
+git delete -d <branch_name> [delete branch]
+git push origin --delete <branch_name> [for remote delete]
+
+
+git status
+git status [ current status of Git staging area ]
+git add <filename> or git add . [stage file]
+git rm file.txt
+git commit -m "Message" [commit change a create unique commit id]
+git commit -am "Commit message" [add more commit]
+git commit -amend [Change in last commit message]
+git merge <branch_name> [merge branch to current branch]
+
+Other
+===============================
+git log [check last commit]
+git checkout <commit hash> [go to commit stage]
+
+
+GitUpload Steps
+=================================
+*	Initilize Git by config username and email as mentioned above
+*	git init
+*	git add .
+*	git commit -m "This is comment"
+*	git remote add origin git@github.com:rauls26a/gitcmd.git
+*	git push -u origin main
+
+SSH KEY
+=================================
+ssh-keygen -t ed25519 -C "your_email@example.com" [ Generate SSH Key]
+Add ssh Key in Github manually 
+ssh -T git@github.com [ Check if key is valid or installed properly]
+
+
+Pull Complete Project with all Branches
+=================================
+use remote projects with all branches
+git clone <reponame> <destination>
+git fetch --all
+git branch -a
+
+GIT Stash
+=================================
