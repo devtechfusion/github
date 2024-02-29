@@ -77,7 +77,7 @@ git commit -amend [Change in last commit message]
 ```
 git merge <branch_name> [merge branch to current branch]
 
-###Other
+### Other
 ```
 git log [check last commit]
 git checkout <commit hash> [go to commit stage]
@@ -86,7 +86,7 @@ git fetch --all
 git fetch <remote> <branch>
 ```
 
-###SSH KEY
+### SSH KEY
 ssh-keygen -t ed25519 -C "your_email@example.com"  `Generate SSH Key` <br>
 
 Add ssh Key in Github manually 
