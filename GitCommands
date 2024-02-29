@@ -17,11 +17,17 @@ git branch -a <View all branches>
 git branch <branch_name> [Create new branch]
 git checkout <branch_name> [switch to branch]
 git checkout -b <branch_name>  [create and switch to new branch]
+git branch -m old_bot_header old_header [rename branch]
 git push -u origin <branch_name> [push local branch to remote repo]
 or
 git pull origin <branch_name> [If you want to merge remote change to current branch]
 
-git delete -d <branch_name> [delete branch]
+git branch -d new-feature [delete branch]
+
+### Deleting Branch from Locally and remote 
+git branch -D branch_name
+git push origin :branch_name
+
 git push origin --delete <branch_name> [for remote delete]
 
 
@@ -38,7 +44,9 @@ Other
 ===============================
 git log [check last commit]
 git checkout <commit hash> [go to commit stage]
-
+git fetch --dry-run
+git fetch --all
+git fetch <remote> <branch>
 
 GitUpload Steps
 =================================
